@@ -1,0 +1,68 @@
+.editor-container {
+    position: relative;
+    padding: 20px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: auto;
+}
+
+.toolbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 8px;
+    background: white;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.toolbar button {
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition-duration: 0.6s;
+  
+}
+
+.toolbar button:hover {
+    color: #007aff;
+    background-color: rgb(224, 224, 224);
+}
+
+.editor {
+    min-height: 640px;
+    padding: 10px;
+    cursor: text;
+    font-size: 16px;
+    border-top: none;
+}
+
+.DraftEditor-root {
+    font-family: Arial, sans-serif;
+}
+
+/* Cores de texto */
+.RED { color: red; }
+.GREEN { color: green; }
+.BLUE { color: blue; }
+
+/* Estilo de bloco de citação */
+blockquote {
+    border-left: 4px solid #ddd;
+    color: #666;
+    padding-left: 10px;
+    margin-left: 0;
+    font-style: italic;
+}
+
+/* Alinhamento */
+.text-align-left { text-align: left; }
+.text-align-center { text-align: center; }
+.text-align-right { text-align: right; }
