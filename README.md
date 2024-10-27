@@ -23,13 +23,7 @@ Executa o aplicativo no modo de desenvolvimento.
 ```
 Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no seu navegador.
 
-<img src="https://github.com/Joaogabriel148/App_React/blob/main/img/AppReact.png"/>
-
-## Servidor Json
-
-```s
-  `npx json-server --port 3001 --watch db.json`
-```
+<img src="https://github.com/Joaogabriel148/Text-Editor/blob/main/img/Captura%20de%20tela%202024-10-25%20194903.png"/>
 
 ## :handshake: Colaboradores
 <table>
