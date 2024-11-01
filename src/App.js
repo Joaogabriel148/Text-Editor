@@ -1,12 +1,14 @@
 import React from 'react';
-import NotionEditor from './NotionEditor';
+import TextEditor from './TextEditor';
 import './App.css'
 
 function App() {
     return (
         <div className="App">
-            <h1>Text Editor</h1>
-            <NotionEditor />
+            <div className='title'>
+            <   h1>Text Editor</h1>
+            </div>
+            < TextEditor/>
         </div>
     );
 }

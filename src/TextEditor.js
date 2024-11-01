@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
-import { Editor, EditorState, RichUtils, Modifier, AtomicBlockUtils } from 'draft-js';
+import { Editor, EditorState, RichUtils} from 'draft-js';
+// Modifier, AtomicBlockUtils
 import 'draft-js/dist/Draft.css';
-import './NotionEditor.css';
+import './TextEditor.css';
 
-function NotionEditor() {
+function TextEditor() {
     const [editorState, setEditorState] = useState(EditorState.createEmpty());
     const editorRef = useRef(null);
 
@@ -16,7 +17,7 @@ function NotionEditor() {
         setEditorState(RichUtils.toggleBlockType(editorState, blockType));
     };
 
-    // Função para adicionar cor ao texto INCOMPLETA
+    // Função para adicionar cor ao texto (INCOMPLETA)
 
     // const applyColor = (color) => {
     //     const selection = editorState.getSelection();
@@ -25,7 +26,7 @@ function NotionEditor() {
     //     setEditorState(EditorState.push(editorState, newContentState, 'change-inline-style'));
     // };
 
-    // Função para adicionar imagem
+    // Função para adicionar imagem (INCOMPLETA)
 
     // const addImage = (url) => {
     //     const contentState = editorState.getCurrentContent();
@@ -34,7 +35,7 @@ function NotionEditor() {
     //     setEditorState(AtomicBlockUtils.insertAtomicBlock(editorState, entityKey, ' '));
     // };
 
-    // Função para alinhamento de texto
+    // Função para alinhamento de texto (INCOMPLETA)
 
     // const applyAlignment = (alignment) => {
     //     setEditorState(RichUtils.toggleBlockType(editorState, alignment));
@@ -56,17 +57,17 @@ function NotionEditor() {
                 <button onMouseDown={(e) => { e.preventDefault(); toggleBlockType('unordered-list-item'); }}>UL</button>
                 <button onMouseDown={(e) => { e.preventDefault(); toggleBlockType('ordered-list-item'); }}>OL</button>
 
-                {/* Alinhamento */}
+                {/* Alinhamento (INCONPLETA) */} 
                 {/* <button onMouseDown={(e) => { e.preventDefault(); applyAlignment('left'); }}>Left</button>
                 <button onMouseDown={(e) => { e.preventDefault(); applyAlignment('center'); }}>Center</button>
                 <button onMouseDown={(e) => { e.preventDefault(); applyAlignment('right'); }}>Right</button> */}
 
-                {/* Cores */}
+                {/* Cores (INCONPLETA)*/}
                 {/* <button onMouseDown={(e) => { e.preventDefault(); applyColor('RED'); }}>Red</button>
                 <button onMouseDown={(e) => { e.preventDefault(); applyColor('GREEN'); }}>Green</button>
                 <button onMouseDown={(e) => { e.preventDefault(); applyColor('BLUE'); }}>Blue</button> */}
 
-                {/* Adicionar Imagem */}
+                {/* Adicionar Imagem (INCONPLETA) */}
                 {/* <button
                     onMouseDown={(e) => {
                         e.preventDefault();
@@ -91,4 +92,4 @@ function NotionEditor() {
     );
 }
 
-export default NotionEditor;
+export default TextEditor;

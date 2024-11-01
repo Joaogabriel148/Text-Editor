@@ -1,5 +1,15 @@
+/* * {
+  background-color: rgb(88, 88, 88);
+} */
+
  .App {
   text-align: center;
+}
+
+.title {
+  /* background-color: grey; */
+  margin: 0;
+  padding: 0;
 }
 
 /*.App-logo {
