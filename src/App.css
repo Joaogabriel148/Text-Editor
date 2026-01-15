@@ -1,48 +1,82 @@
-/* * {
-  background-color: rgb(88, 88, 88);
-} */
+* {
+   background-color: rgb(6, 6, 29);
+}
 
- .App {
+.App {
   text-align: center;
 }
 
 .title {
-  /* background-color: grey; */
+  color: white;
   margin: 0;
   padding: 0;
 }
 
-/*.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editor-container {
+    position: relative;
+    padding: 20px;
+    border: 3px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    max-width: 750px;
+    margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 8px;
+    background: white;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.toolbar button {
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition-duration: 0.6s;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.toolbar button:hover {
+    color: #007aff;
+    background-color: rgb(224, 224, 224);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.editor {
+    min-height: 670px;
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: text;
+    font-size: 16px;
+    border-top: none;
+    color: white;
+}
+
+.DraftEditor-root {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Cores de texto */
+.RED { color: red; }
+.GREEN { color: green; }
+.BLUE { color: blue; }
+
+/* Estilo de bloco de citação */
+blockquote {
+    border-left: 4px solid #ddd;
+    color: #666;
+    padding-left: 10px;
+    margin-left: 0;
+    font-style: italic;
+}

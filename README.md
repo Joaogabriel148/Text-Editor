@@ -1,9 +1,9 @@
 <h1 align="center">Text-Editor</h1>
 
-## :memo: Descrição
+## Descrição
 Editor de texto simples no estilo Rich-text
 
-## :books: Contextualização
+## Contextualização
 * <b>Contextualização </b>: O projeto em si é uma aplicação de edição simples de texto, que terá como funcionalidades básicas de um editor de texto como colocar o título, em negrito e entre outras funcionalidades
 
 ## dependências
@@ -25,7 +25,7 @@ Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no seu na
 
 <img src="https://github.com/Joaogabriel148/Text-Editor/blob/main/img/Captura%20de%20tela%202024-10-25%20194903.png"/>
 
-## :handshake: Colaboradores
+## Colaboradores
 <table>
   <tr>
     <td align="center">
